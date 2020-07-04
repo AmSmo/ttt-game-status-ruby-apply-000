@@ -49,5 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)[1]
+  if won?(board)
+    won?(board)[0]
+  end
 end
