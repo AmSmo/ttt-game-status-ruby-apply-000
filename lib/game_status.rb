@@ -35,4 +35,9 @@ def full?(board)
     spot == " "
   end
 end
-  
+
+def draw?(board)
+  if full?(board) && !won?(board)
+    TRUE
+  end
+end
